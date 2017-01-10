@@ -190,6 +190,10 @@ img {
     border: 1px solid transparent;
 }
 
+button {
+    cursor: pointer;
+}
+
 button:hover,
 button:active,
 a:hover,
@@ -1285,3 +1289,470 @@ footer {
 .social-link .fa-facebook:hover {
     background: rgba(143, 163, 222, 1);
 }
+
+/*-------------------------------------------*/
+/* ----- Popups ------ */
+/*-------------------------------------------*/
+
+.show-travelpopups {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.popups-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+/* ----- Popup ------ */
+
+.popup-box {
+    display: block;
+    /*display: none;*/
+    width: 60%;
+    max-width: 480px;
+    min-width: 310px;
+    height: auto;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 11;
+}
+
+.popup {
+    display: block;
+    /*padding: 30px 0;*/
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #d9d9d9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.back-link-box {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.close-popup-box {
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.close-popup {
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    /*top: -21px;*/
+/*    top: 0;
+    right: 0;*/
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.close-popup:after {
+    display: block;
+    content:"\2716";
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    font-size: 19px;
+    line-height: 28px;
+    color: #ffffff;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.close-popup:hover:after {
+    color: #707070;
+}
+
+/*-- Popup Start --*/
+
+.popup-start {
+    background-image: url(img/popup_start_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.popop-start-form {
+    padding: 20px 0 0 0;
+}
+
+.popup h2 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #3b3b3b;
+    padding: 5px 0;
+}
+
+.popup h3 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #3b3b3b;
+    padding: 5px 0;
+}
+
+.popup-start-btns {
+    padding: 41px 0 186px 0;
+}
+
+.green-btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 210px;
+    margin: 5px auto;
+    padding: 9px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    background: rgba(102, 166, 45, 1);
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.green-btn:hover {
+    background: rgba(125, 185, 72, 1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.blue-btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 210px;
+    margin: 5px auto;
+    padding: 9px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    background: rgba(95, 151, 216, 1);
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.blue-btn:hover {
+    background: rgba(116, 163, 218, 1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/*-- /Popup Start --*/
+
+/*-- Popup Step 1 --*/
+
+.popup-step-1 {
+/*    background-image: url(img/show_travel_pop_up_step1_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;*/
+    padding: 10px 10px 245px 10px;
+    position: relative;
+}
+
+.popup-step-1:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(img/show_travel_pop_up_step1_bg.png);
+    background-repeat: no-repeat;
+    background-position: center 24px;
+}
+
+.back-link {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #cccccc;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.back-link:link,
+.back-link:visited {
+    color: #cccccc;
+}
+
+.back-link.active,
+.back-link:active {
+    color: #707070;
+}
+
+.back-link:hover {
+    color: #707070;
+}
+
+.back-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #707070;
+    padding: 0 5px 5px 0;
+}
+
+.back-arrow:before {
+    content: "\2190";
+}
+
+.popup-search-box {
+    background: rgba(255, 255, 255, 1);
+    margin: 40px auto;
+    display: block;
+    width: 89%;
+
+}
+
+.search-inpt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    padding: 0 0 0 15px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #ffffff;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+.search-btn-popup {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    height: 52px;
+    background-image: url(img/popup_search_icon.png);
+    background-repeat: no-repeat;
+    background-position: 4px 16px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.popup-step-1-form {
+    padding: 13px 0;
+}
+
+.popup-search-box {
+    position: 
+}
+
+/*-- /Popup Step 1 --*/
+
+/*-- Popup Step 2 --*/
+
+.popup-step-2 {
+    padding: 10px 10px 14px 10px;
+}
+
+.popup-step-2-input {
+    /*display: table;*/
+    width: 89%;
+    padding: 14px 0;
+    background: rgba(255, 255, 255, 1);
+    margin: 5px auto;
+}
+
+.popup-step-2-row {
+    padding: 0 0 8px 0;
+}
+
+.popup-step-2-row p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #858585;
+    text-align: left;
+    padding: 5px 3% 5px 8%;
+}
+
+.popup-step-2-row p span {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #858585;
+}
+
+.popup-step-2-form h2 {
+    padding: 15px 0;
+}
+
+.popup-step-2-input i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8%;
+    height: 20px;
+    background-image: url(img/show_travel_pop_up_step_2_sprite.png);
+    background-repeat: no-repeat;
+}
+
+.popup-step-2-input i.date-icon {
+    background-position: 7px -4px;
+}
+
+.popup-step-2-input i.home-icon {
+    background-position: 6px -45px;
+}
+
+.popup-step-2-input i.airplane-icon {
+    background-position: 6px -88px;
+}
+
+.popup-step-2-input input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 92%;
+    height: 21px;
+    padding: 0 10px 0 0;
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+.blue-btn-box {
+    padding: 2px 0 0 0;
+}
+
+
+/*-- /Popup Step 2 --*/
