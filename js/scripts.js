@@ -66,17 +66,17 @@ $(document).ready(function() {
 
     // ----------------------------------------------------------------------------------
 
-    // $(function() {
+    $(function() {
 
-    //     $(".popups-bg, .close-popup").click(function() {
+        $(".popups-bg, .close-popup").click(function() {
 
-    //         $(".popups-bg").fadeOut(300);
+            $(".popups-bg").fadeOut(300);
 
-    //         $(".popup-box").fadeOut(300);
+            $(".popup-box").fadeOut(300);
 
-    //     });
+        });
 
-    // });
+    });
 
     // ----------------------------------------------------------------------------------
 
