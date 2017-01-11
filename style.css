@@ -615,11 +615,11 @@ height: 100%;
 }
 
 .col-1 {
-    width: 25%;
+    width: 26%;
 }
 
 .col-2 {
-    width: 41%;
+    width: 40%;
 }
 
 .col-3 {
@@ -634,7 +634,7 @@ height: 100%;
 .list-oval-links li {
     display: inline-block;
     vertical-align: top;
-    padding: 5px;
+    padding: 5px 4px;
 }
 
 .list-oval-links li:nth-child(1) {
