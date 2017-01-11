@@ -618,6 +618,10 @@ height: 100%;
     width: 26%;
 }
 
+.col-1.scroll {
+    max-height: 520px;
+}
+
 .col-2 {
     width: 40%;
 }
@@ -1016,13 +1020,13 @@ height: 100%;
 
 .place-info-sect .col.col-1 {
     display: block;
-    width: 32%;
+    width: 33%;
     padding: 15px 10px 10px 10px;
 }
 
 .place-info-sect .col-2 {
     display: block;
-    width: 68%;
+    width: 67%;
     height: 100%;
     position: absolute;
     top: 0;
