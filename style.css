@@ -118,7 +118,10 @@ select {
     text-overflow: "";
 }
 
-*::-ms-expand { display: none; }
+&::-ms-expand { 
+    display: none;
+    opacity: 0;
+}
 
 input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
 input::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
