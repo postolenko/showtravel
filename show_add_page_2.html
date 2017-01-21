@@ -241,9 +241,9 @@
 							
 							<form>
 								
-								<div class="form-sect">
+								<div class="form-sect clearfix">
 									
-									<div class="addpage-col">
+									<div class="addpage-col left">
 										
 										<label>Телефон</label>
 
@@ -251,7 +251,7 @@
 
 									</div>
 
-									<div class="addpage-col">
+									<div class="addpage-col right">
 										
 										<label>Факс</label>
 
@@ -259,7 +259,7 @@
 
 									</div>
 
-									<div class="addpage-col">
+									<div class="addpage-col left">
 										
 										<label>Email</label>
 
@@ -267,7 +267,7 @@
 
 									</div>
 
-									<div class="addpage-col">
+									<div class="addpage-col right">
 										
 										<label>Адрес Вашего веб-сайта</label>
 
@@ -275,7 +275,7 @@
 
 									</div>
 
-									<div class="addpage-col">
+									<div class="addpage-col left">
 										
 										<label>Страница в Facebook</label>
 
@@ -285,9 +285,9 @@
 
 								</div>
 
-								<div class="form-sect">
+								<div class="form-sect clearfix">
 									
-									<div class="addpage-col block">
+									<div class="addpage-col row-full">
 										
 										<label>Категория <span class="grey">(Выберите одну категорию, лучше всего описывающую эту достопримечательность)</span></label>
 
@@ -341,7 +341,7 @@
 
 									</div>
 
-									<div class="addpage-col block">
+									<div class="addpage-col row-full">
 										
 										<label>Стоимость посещения</label>
 
@@ -381,9 +381,9 @@
 
 								</div>
 
-								<div class="form-sect">
+								<div class="form-sect clearfix">
 									
-									<div class="addpage-col">
+									<div class="addpage-col left">
 										
 										<label>Описание достопримечательности <span class="grey">(Максимальное количество знаков 400)</span></label>
 
@@ -395,7 +395,7 @@
 
 									</div>
 
-									<div class="addpage-col">
+									<div class="addpage-col right">
 										
 										<label>Дополнительная информация <span class="grey">(необязательно)</span></label>
 
@@ -471,7 +471,7 @@
 
 									</div>
 
-									<div>
+									<div class="addpage-col row-full">
 										
 										<a href="#" class="form-sect-link">Добавьте описание на другом языке</a>
 
@@ -482,27 +482,43 @@
 
 								<div class="form-sect">
 
-									<div class="addpage-col">
+									<div class="addpage-col row-full">
 										
 										<label>Выберите фото, чтобы представить Вашу страницу в каталоге</label>
 
-										<input type="file">
+										<div class="upload-box">
 
-										<button type="button" class="upl-file-btn">Выбрать файл</button>
+											<p class="upl-txt">Файл изображения:</p>
+
+											<div class="upl-file-btn-box">
+
+												<input type="file" class="upload-inpt">
+
+												<button type="button" class="upl-file-btn">Выбрать файл</button>												
+
+											</div>
+
+											<p class="upl-txt">файл не выбран</p>
+
+										</div>
 
 									</div>
 
 									<div>
 										
-										<h5>Отправить данную страницу каталога</h5>
+										<h5 class="blue-h">Отправить данную страницу каталога</h5>
 
-										<div class="checkbox">
+										<div class="confirm-box">
 
-											<input type="checkbox" id="ch16" name="add_page_checkbox_5" value="checkbox16">
-											
-											<label for="ch16"></label>
+											<div class="checkbox">
 
-											<p>Поставьте флажок в подтверждение того, что Вы являетесь официальным представителем объекта, страницу которого создаете и, что предоставленная Вами информация верна. Предоставляя фотографию Вы также подтверждаете, что имеете право на ее использование в интернете.</p>
+												<input type="checkbox" id="ch16" name="add_page_checkbox_5" value="checkbox16">
+												
+												<label for="ch16"></label>
+
+											</div>
+
+											<p class="inline-p">Поставьте флажок в подтверждение того, что Вы являетесь официальным представителем объекта, страницу которого создаете и, что предоставленная Вами информация верна. Предоставляя фотографию Вы также подтверждаете, что имеете право на ее использование в интернете.</p>
 
 										</div>
 
