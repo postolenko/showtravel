@@ -303,7 +303,7 @@
 
 									</div>
 
-									<div class="addpage-col four-cols">
+									<div class="addpage-col row-full">
 										
 										<label>Рекомендуемая продолжительность посещения</label>
 
@@ -311,7 +311,7 @@
 
 											<input type="checkbox" id="ch2" name="add_page_checkbox_2" value="checkbox2">
 											
-											<label for="ch2"> < 1 часа</label>											
+											<label for="ch2"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1 часа</label>											
 
 										</div>
 
@@ -341,7 +341,7 @@
 
 									</div>
 
-									<div class="addpage-col row-full">
+									<div class="addpage-col">
 										
 										<label>Стоимость посещения</label>
 
@@ -363,9 +363,9 @@
 
 										<div class="two-cols">
 											
-											<input type="text" placeholder="Средняя цена">
+											<input type="text" placeholder="Средняя цена" class="left">
 
-											<select>
+											<select class="left">
 											
 												<option>Выберите валюту...</option>
 												<option>Валюта 1</option>
@@ -381,102 +381,105 @@
 
 								</div>
 
-								<div class="form-sect clearfix">
+								<div class="form-sect">
+
+									<div class="clearfix">
 									
-									<div class="addpage-col left">
-										
-										<label>Описание достопримечательности <span class="grey">(Максимальное количество знаков 400)</span></label>
-
-										<div class="textarea-box">
+										<div class="addpage-col left">
 											
-											<textarea placeholder="Только на английском, без кода HTML, без адреса веб-сайта, телефона, электронной почты,нельзя использовать только  ЗАГЛАВНЫЕ БУКВЫ"></textarea>
+											<label>Описание достопримечательности <span class="grey">(Максимальное количество знаков 400)</span></label>
 
-										</div>
-
-									</div>
-
-									<div class="addpage-col right">
-										
-										<label>Дополнительная информация <span class="grey">(необязательно)</span></label>
-
-										<p>Предлагает ли эта достопримечательность что-либо из перечисленного ниже?</p>
-
-										<div class="two-cols">
-											
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch8" name="add_page_checkbox_4" value="checkbox8">
-											
-												<label for="ch8">Лестница / лифт</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch9" name="add_page_checkbox_4" value="checkbox9">
-											
-												<label for="ch9">Можно купить еду</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch10" name="add_page_checkbox_4" value="checkbox10">
-											
-												<label for="ch10">Пандусы для кресел-каталок</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch11" name="add_page_checkbox_4" value="checkbox11">
-											
-												<label for="ch11">Парковка для детских колясок</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch12" name="add_page_checkbox_4" value="checkbox12">
-											
-												<label for="ch12">Развлечения для детей</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch13" name="add_page_checkbox_4" value="checkbox13">
-											
-												<label for="ch13">Развлечения для маленьких детей</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch14" name="add_page_checkbox_4" value="checkbox14">
-											
-												<label for="ch14">Туалеты</label>											
-
-											</div>
-
-											<div class="checkbox">
-
-												<input type="checkbox" id="ch15" name="add_page_checkbox_4" value="checkbox15">
-											
-												<label for="ch15">Шкафчики / камеры хранения</label>											
+											<div class="textarea-box">
+												
+												<textarea placeholder="Только на английском, без кода HTML, без адреса веб-сайта, телефона, электронной почты,нельзя использовать только  ЗАГЛАВНЫЕ БУКВЫ"></textarea>
 
 											</div>
 
 										</div>
 
+										<div class="addpage-col right">
+											
+											<label>Дополнительная информация <span class="grey">(необязательно)</span></label>
+
+											<p>Предлагает ли эта достопримечательность что-либо из перечисленного ниже?</p>
+
+											<div class="two-cols">
+												
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch8" name="add_page_checkbox_4" value="checkbox8">
+												
+													<label for="ch8">Лестница / лифт</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch9" name="add_page_checkbox_4" value="checkbox9">
+												
+													<label for="ch9">Можно купить еду</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch10" name="add_page_checkbox_4" value="checkbox10">
+												
+													<label for="ch10">Пандусы для кресел-каталок</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch11" name="add_page_checkbox_4" value="checkbox11">
+												
+													<label for="ch11">Парковка для детских колясок</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch12" name="add_page_checkbox_4" value="checkbox12">
+												
+													<label for="ch12">Развлечения для детей</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch13" name="add_page_checkbox_4" value="checkbox13">
+												
+													<label for="ch13">Развлечения для маленьких детей</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch14" name="add_page_checkbox_4" value="checkbox14">
+												
+													<label for="ch14">Туалеты</label>											
+
+												</div>
+
+												<div class="checkbox">
+
+													<input type="checkbox" id="ch15" name="add_page_checkbox_4" value="checkbox15">
+												
+													<label for="ch15">Шкафчики / камеры хранения</label>											
+
+												</div>
+
+											</div>
+
+										</div>
+
 									</div>
 
-									<div class="addpage-col row-full">
-										
+									<div class="row-full">
+
 										<a href="#" class="form-sect-link">Добавьте описание на другом языке</a>
 
 									</div>
-									
 
 								</div>
 
@@ -558,7 +561,7 @@
 
 					</div>
 
-					<dir class="right-col">
+					<div class="right-col">
 						
 						<ul class="list-socila-nets">
 							
@@ -568,7 +571,7 @@
 
 						</ul>
 
-					</dir>
+					</div>
 
 				</div>
 

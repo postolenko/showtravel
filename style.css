@@ -3009,12 +3009,16 @@ section.services-sect {
     padding-bottom: 10px;
 }
 
+.row-full,
 .addpage-col.row-full {
     display: block;
+    width: 100%;
+    float: none;
 }
 
 .addpage-col.row-full select {
-    width: 98%;
+    /*width: 98%;*/
+    width: 49%;
 }
 
 .addpage-col.row-full.two-cols,
@@ -3139,16 +3143,21 @@ section.services-sect {
     width: 50%;
 }
 
-.addpage-col.four-cols .checkbox {
-    width: 24.5%;
+.addpage-col .two-cols .left,
+.addpage-col .two-cols .right {
+    width: 48%;
 }
+
+/*.addpage-col.four-cols .checkbox {
+    width: 24.5%;
+}*/
 
 .checkbox {
     display: inline-block;
     vertical-align: middle;
     min-width: 135px;
     position: relative;
-    padding: 13px 0;
+    padding: 13px 25px 13px 0;
 }
 
 .checkbox input[type=checkbox] {
