@@ -30,6 +30,11 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
+
+        $(".show_attractions_bg").css({"bottom" : $(".footer").outerHeight() + "px"});
+
+        // -----------------------------------------------------------------------------
+
         getPopupPosition();
 
         getServicesLeftColBg();
@@ -167,9 +172,21 @@ $(document).ready(function() {
 
     // ----------------------------------------------------------------------------------
 
-    $(".upl-file-btn").click(function() {
+    $(function() {
 
-        $("input.upload-inpt").click();
+        $(".upl-file-btn").click(function() {
+
+            $("input.upload-inpt").click();
+
+        });
+
+    });
+
+    // ----------------------------------------------------------------------------------
+
+    $(function() {
+
+        $(".show_attractions_bg").css({"bottom" : $(".footer").outerHeight() + "px"});
 
     });
 
