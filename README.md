@@ -6,3 +6,4 @@
 # http://postolenko.github.io/showtravel/show_add_page_1.html
 # http://postolenko.github.io/showtravel/show_add_page_2.html
 # http://postolenko.github.io/showtravel/show_attractions.html
+# http://postolenko.github.io/showtravel/show_attractions_info.html
