@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="ru">
@@ -24,11 +25,13 @@
 
 	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css">
 
+
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
@@ -92,14 +95,6 @@
 
 				<div class="nav-box">
 
-					<!-- <img class="nav-bg" src="img/nav_bg.png" alt=""> -->
-					
-					<!-- <div class="col-left">
-						
-						<img src="img/decor_nav_left.png" align="decor_nav_left">
-
-					</div> -->
-
 					<div class="main-nav">
 						
 						<ul class="main-nav-list">
@@ -117,12 +112,6 @@
 
 					</div>
 
-					<!-- <div class="col-right">
-						
-						<img src="img/decor_nav_left.png" align="decor_nav_left">
-
-					</div> -->
-
 				</div>
 
 			</div>
@@ -137,15 +126,13 @@
 
 	<!-- /Header -->
 
-	<!-- Pop Up -->
+	<!-- Popup Login -->
 
-	<!-- <div class="show-travelpopups"> -->
-		
 		<div class="popups-bg"></div>
 
 		<div class="popup-box popup-position">
 
-			<div class="popup popup-start">
+			<div class="popup popup-login">
 
 				<div class="clearfix">
 
@@ -163,41 +150,95 @@
 
 				</div>
 
-				<div class="popop-start-form">
-				
-					<form>
+				<div class="popup-login">
+					
+					<h3>Войти через:</h3>
+
+					<div class="login-btns-box offset-ziro">
 						
-						<h2>Приветствуем Вас, Nickname!</h2>
-
-						<h3>Каков Ваш следующий шаг?</h3>
-
-						<div class="popup-start-btns">
-
-							<div>
-
-								<button type="button" class="green-btn">Мои поездки</button>
-
-							</div>
-
-							<div>
-
-								<button type="button" class="blue-btn">Запланировать поездку</button>
-
-							</div>
+						<div class="btn-box">
+							
+							<button type="button" class="soc-btn vk"><i class="fa fa-vk" aria-hidden="true"></i>Vkontakte</button>
 
 						</div>
 
-					</form>
+						<div class="btn-box">
+							
+							<button type="button" class="soc-btn facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
+
+						</div>
+
+						<div class="btn-box">
+							
+							<button type="button" class="soc-btn tw"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</button>
+
+						</div>
+
+						<div class="btn-box">
+							
+							<button type="button" class="soc-btn google"><i class="google-plus" aria-hidden="true">g<span>+</span></i>Google</button>
+
+						</div>
+
+					</div>
+
+					<div class="login-form">
+						
+						<h3>Введите Ваш логин и пароль:</h3>
+
+						<form>
+
+							<div class="inpt-box">
+								
+								<input class="login-inpt"  type="text" placeholder="Логин или электронная почта">
+
+								<i class="user-icon"></i>
+
+							</div>							
+
+							<div class="inpt-box">
+								
+								<input class="login-inpt"  type="password" placeholder="Пароль">
+
+								<i class="password-icon"></i>
+
+							</div>
+
+							<div class="submit-btn-box">
+								
+								<button class="login-sbmit-btn white-btn" type="submit">Войти</button>
+
+							</div>
+
+						</form>
+
+					</div>
+
+					<div class="login-links offset-ziro">
+						
+						<div class="col left-align">
+							
+							<a href="#" class="sign-popup-link">Забыли пароль?</a>
+
+						</div>
+
+						<div class="col right-align">
+							
+							<p>Нет аккаунта?</p>
+							<a href="#" class="sign-popup-link">Зарегистрируйтесь</a>
+
+						</div>
+
+					</div>
 
 				</div>
+
 
 			</div>
 
 		</div>
 
-	<!-- </div> -->
-
-	<!-- /Pop Up -->
+	<!-- /Popup Login -->
 
 		<!-- Content -->
 
@@ -205,15 +246,17 @@
 
 				<section>
 					
-					<div class="search-sect row offset-ziro">
+					<div class="search-sect travel-preview row offset-ziro">
 						
 						<div class="col col-1">
 							
 							<ul class="list-oval-links">
-								
-								<li><a href="#" class="elipse-link active">Места</a></li>
+
+								<li><a href="#" class="elipse-link active">Ежедневный план</a></li>
+								<li><a href="#" class="elipse-link">Места</a></li>
 								<li><a href="#" class="elipse-link">Экскурсии</a></li>
 								<li><a href="#" class="elipse-link">Отели</a></li>
+								<li><a href="#" class="elipse-link">Прокат авто</a></li>
 
 							</ul>
 
@@ -221,25 +264,6 @@
 
 						<div class="col col-2">
 							
-							<ul class="grey-links">
-								
-								<li><a href="#" class="grey-link">Europe</a></li>
-								<li><a href="#" class="grey-link">Великобритания</a></li>
-								<li><a href="#" class="grey-link">Англия</a></li>
-								<li><a href="#" class="grey-link">Большой Лондон</a></li>
-
-							</ul>
-
-							<div class="active-place">
-
-								<h2>Лондон</h2>
-
-							</div>
-
-						</div>
-
-						<div class="col col-3">
-
 							<div class="search-wrapp">
 
 								<div class="search-form">
@@ -258,42 +282,9 @@
 
 						</div>
 
-					</div>
+						<div class="col col-3">
 
-				</section>
-
-				<section>
-					
-					<div class="navigator row offset-ziro">
-						
-						<div class="col col-1">
-
-							<div class="navigator-h">
-
-								<h2>Навигатор</h2>
-
-							</div>
-
-						</div>
-
-						<div class="col col-2">
-							
-							<ul class="navigator-links">
-								
-								<li><a href="#" class="navigator-link">покупки</a></li>
-								<li><a href="#" class="navigator-link">рестораны</a></li>
-								<li><a href="#" class="navigator-link">музеи</a></li>
-								<li><a href="#" class="navigator-link">семья</a></li>
-								<li><a href="#" class="navigator-link">транспорт</a></li>
-								<li><a href="#" class="navigator-link">ночные развлечения</a></li>
-								<li><a href="#" class="navigator-link">на воздухе</a></li>
-								<li><a href="#" class="navigator-link">спорт</a></li>
-								<li><a href="#" class="navigator-link">релаксация</a></li>
-								<li><a href="#" class="navigator-link">отели</a></li>
-								<li><a href="#" class="navigator-link">отдых для детей</a></li>
-								<li class="special-item"><a href="#" class="navigator-link special">спецпредложения <i class="icon-percent"></i></a></li>
-
-							</ul>
+							<button type="button" class="blue-btn">Обзор поездки</button>
 
 						</div>
 
@@ -303,101 +294,195 @@
 
 				<section>
 					
-					<div class="place-info-sect">
+					<div class="place-info-sect show-travel-preview">
 
 						<div class="row offset-ziro">
 							
 							<div class="col col-1 scroll">
 
-								<dir class="place-info-header">
+								<div class="place-info-header offset-ziro">
 								
-									<h2>Лондон</h2>
-
-									<h3>Великобритания</h3>
-
-									<a href="#">Запланировать новую поездку в Лондон</a>
-
-								</dir>
-
-								<dir class="place-info-content">
-									
-									<div class="place-info-article clearfix">
+									<div class="col date-switch-box">
 										
-										<div class="img-box">
-											
-											<img class="place-photo" src="img/photo_1.png" alt="">
+										<div class="date-switch offset-ziro">
+
+											<p class="date">Пятница, 23 декабря</p>
+
+											<button type="button" class="switch-date-btn"></button>
 
 										</div>
 
-										<div class="star-box"><p class="star"><i class="fa fa-star" aria-hidden="true"></i></p></div>
+									</div>
 
-										<h3>Big Ben</h3>
-
-										<p>Биг-Бен (англ. Big Ben) — популярное название часовой башни Вестминстерского дворца.</p>
+									<div class="col grey-btn-box">
+										
+										<buton type="button" class="grey-btn">Изменить</buton>
 
 									</div>
 
-								</dir>
+								</div>
 
-								<dir class="place-info-content">
+								<div class="travel-dimensions-box">
 									
-									<div class="place-info-article clearfix">
-										
-										<div class="img-box">
+									<div class="travel-dimension">
+
+										<div class="preview-place-row-1 offset-ziro">
 											
-											<img class="place-photo" src="img/photo_2.png" alt="">
+											<div class="col col-1">
+
+												<div class="img-box">
+												
+													<img src="img/travel_photo_1.jpg">
+
+												</div>
+
+											</div>
+
+											<div class="col col-2">
+												
+												<h3>St. Paul's Cathedral</h3>
+
+												<p class="pill blue">1h 30m</p>
+
+											</div>
+
+											<div class="col col-3">
+												
+												<div class="btn-dots">
+
+													<div></div>
+													<div></div>
+													<div></div>
+
+												</div>
+
+											</div>
 
 										</div>
 
-										<div class="star-box"><p class="star"><i class="fa fa-star" aria-hidden="true"></i></p></div>
-
-										<h3>Buckingham Palace</h3>
-
-										<p>Букинге́мский дворе́ц — официальная лондонская резиденция британских монархов.</p>
-
-									</div>
-
-								</dir>
-
-								<dir class="place-info-content">
-									
-									<div class="place-info-article clearfix">
-										
-										<div class="img-box">
+										<div class="preview-place-row-2 offset-ziro">
 											
-											<img class="place-photo" src="img/photo_1.png" alt="">
+											<div class="col col-1">
+												
+												<i class="walker-icon"></i>
+
+											</div>
+
+											<div class="col col-2">
+												
+												<div class="offset-ziro">
+
+													<p class="dist-time">2,3 km / 28 min</p>
+
+													<button type="button" class="switch-btn"></button>
+
+												</div>
+
+											</div>
 
 										</div>
 
-										<div class="star-box"><p class="star"><i class="fa fa-star" aria-hidden="true"></i></p></div>
-
-										<h3>Big Ben</h3>
-
-										<p>Биг-Бен (англ. Big Ben) — популярное название часовой башни Вестминстерского дворца.</p>
-
 									</div>
 
-								</dir>
+									<div class="travel-dimension">
 
-								<dir class="place-info-content">
-									
-									<div class="place-info-article clearfix">
-										
-										<div class="img-box">
+										<div class="preview-place-row-1 offset-ziro">
 											
-											<img class="place-photo" src="img/photo_2.png" alt="">
+											<div class="col col-1">
+
+												<div class="img-box">
+												
+													<img src="img/travel_photo_2.jpg">
+
+												</div>
+
+											</div>
+
+											<div class="col col-2">
+												
+												<h3>Лондон</h3>
+
+												<!-- <p class="pill blue">1h 30m</p> -->
+
+											</div>
+
+											<div class="col col-3">
+												
+												<div class="btn-dots">
+												
+													<div></div>
+													<div></div>
+													<div></div>
+												
+												</div>
+
+											</div>
 
 										</div>
 
-										<div class="star-box"><p class="star"><i class="fa fa-star" aria-hidden="true"></i></p></div>
+										<div class="preview-place-row-2 offset-ziro">
+											
+											<div class="col col-1">
+												
+												<i class="walker-icon"></i>
 
-										<h3>Buckingham Palace</h3>
+											</div>
 
-										<p>Букинге́мский дворе́ц — официальная лондонская резиденция британских монархов.</p>
+											<div class="col col-2">
+												
+												<div class="offset-ziro">
+
+													<p class="dist-time">2,3 km / 28 min</p>
+
+													<button type="button" class="switch-btn"></button>
+
+												</div>
+
+											</div>
+
+										</div>
 
 									</div>
 
-								</dir>
+									<div class="travel-dimension">
+
+										<div class="preview-place-row-1 offset-ziro">
+											
+											<div class="col col-1">
+
+												<div class="img-box">
+												
+													<img src="img/travel_photo_3.jpg">
+
+												</div>
+
+											</div>
+
+											<div class="col col-2">
+												
+												<h3>Generator Hostel London</h3>
+
+												<p class="pill green">Hotel</p>
+
+											</div>
+
+											<div class="col col-3">
+												
+												<div class="btn-dots">
+												
+													<div></div>
+													<div></div>
+													<div></div>
+												
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>					
 
 							</div>
 

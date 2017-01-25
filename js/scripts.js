@@ -12,6 +12,9 @@ $(document).ready(function() {
 
     // });
 
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
+
 
     getPopupPosition();
 
@@ -26,7 +29,7 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
-        $(".services-white-bg").css({"width" : ( $(".services .col-1").offset().left + $(".services .col-1").width() ) + "px"});
+        // $(".services-white-bg").css({"width" : ( $(".services .col-1").offset().left + $(".services .col-1").width() ) + "px"});
 
         // ----------------------------------------------------------------------------
 
@@ -82,25 +85,36 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".switch-lg-btn, .lg-link").click(function() {
+        $(".switch-lg-btn").click(function() {
 
-            $(".lg-list").toggleClass("active");
+            if( $(".lg-list").is(":hidden") ) {
+
+                $(".lg-list").fadeIn(300);
+
+            } else {
+
+                $(".lg-list").fadeOut(300);
+
+            }
+
 
         });
 
-        // $("*").click(function() {
+        $(document).mouseup(function (e){
 
-        //     if( $(this).hasClass("lg-list") ) {
+            hide_element = $(".lg-list");
 
-        //         return false;
+            if (!hide_element.is(e.target)
 
-        //     } else {
+                && hide_element.has(e.target).length === 0) {
 
-        //         $(".lg-list").removeClass("active");
+                hide_element.fadeOut(300);
 
-        //     }
+                $(".lg-list").removeClass("active");
+            }
 
-        // });
+        });
+
 
     });
 
@@ -231,13 +245,12 @@ $(document).ready(function() {
     }
 
 
-
-    // ----------------------------------------------------------------------------------
+    // ---------------------------------------
 
     function getPopupPosition() {
 
-        var windowHeight = $(window).height();
-        var windowWidth = $(window).width();
+        windowHeight = $(window).height();
+        windowWidth = $(window).width();
 
         $(".popup-position").css({  "top" :  ( windowHeight - $(".popup-position").outerHeight(true) ) / 2 + "px",
                                     "left" : ( windowWidth - $(".popup-position").outerWidth(true) ) / 2 + "px" 
