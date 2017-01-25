@@ -249,6 +249,10 @@ a:active {
     text-align: center;
 }
 
+.right-align {
+    text-align: right;
+}
+
 /*-------------------------------------------*/
 /* ----- Three Cols Template ------ */
 /*-------------------------------------------*/
@@ -5761,6 +5765,276 @@ section.comments-section {
 }
 
 /* ----- /Show Attractions Info - Commetm Section ------ */
+
+/* ----- Show Travel Details Day ------ */
+
+.travel-days-header {
+    font-size: 0;
+    line-height: 0;
+}
+
+.travel-days-header .col {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.travel-days-header .col-1 {
+    width: 58%;
+}
+
+.travel-days-header .col-2 {
+    width: 42%;
+    text-align: right;
+}
+
+.travel-days-header .elipse-links {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.travel-days-header .elipse-links li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+}
+
+.travel-days-header .col-2 button {
+    margin: 0 0 0 13px;
+}
+
+/* ----- Show Travel Details Day ------ */
+
+/* ----- Show Travel Details Day - circle diagram - Tabs section ------ */
+
+.tabs {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #cbcbcb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.day-tabs {
+    padding: 0 8%;
+}
+
+.day-tabs-header {
+    font-size: 0;
+    line-height: 0;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 40px 0 0 0;
+}
+
+.day-tabs-header .tab-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 0 0 5px 15px;
+    position: relative;
+}
+
+.day-tabs-header .tab-link.active:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0;
+    border-top: 3px solid #5f97d8;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.day-tabs-header .tab-link h3 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.day-tabs-header .tab-link.active h3 {
+    color: #5f97d8;
+}
+
+.day-tabs-header .tab-link p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 9px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+
+.day-tabs-header .tab-link.active p {
+    color: #5f97d8;
+}
+
+.tab-box input[type=radio] + .tab-content {
+    display: none;
+}
+
+.tab-box input[type=radio]:checked + .tab-content {
+    display: block;
+}
+
+.tab-box {
+    position: relative;
+}
+
+.tab-radio {
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: .01;
+    z-index: -1;
+}
+
+.tab-content {
+    padding: 45px 0 10px 0;
+}
+
+.tab-content.seven-cols {
+    text-align: center;
+}
+
+.tab-content.seven-cols .col {
+    display: inline-block;
+    vertical-align: top;
+    width: 13%;
+}
+
+.tab-content h3 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+
+.diagram-box {
+    margin: 50px 0 30px 0;
+}
+
+.tab-content-link {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #5f97d8;
+    text-decoration: underline;
+}
+
+.tab-content-link:link,
+.tab-content-link:visited {
+    text-decoration: underline;
+}
+
+.tab-content-link.active,
+.tab-content-link:active {
+    text-decoration: none;
+}
+
+.tab-content-link:hover {
+    text-decoration: none;
+}
+
+.tabs-info-box {
+    background: rgba(228, 228, 228, 1);
+    border-top: 1px solid #cbcbcb;
+    text-align: center;
+    padding: 50px 2%;
+}
+
+.tabs-info-box p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #3d3d3d;
+}
+
+
+/*-- Circle Diagram --*/
+
+.diagram-box {
+    position: relative;
+}
+
+.circles-wrp {
+    position: relative;
+}
+
+.circles-wrp svg {
+    position: relative;
+    z-index: 2;
+}
+
+.circles-wrp:before {
+    display: block;
+    content: "";
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #838383;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.circles-valueStroke {
+    stroke: #5f97d8;
+}
+
+.circles-maxValueStroke {
+    stroke: none;
+}
+
+.circles-text {
+    text-align: center;
+}
+
+.diagram-txt {
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 100%;
+}
+
+.diagram-txt .p-1,
+.circles-text .p-1 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+
+.diagram-txt .p-2,
+.circles-text .p-2 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+
+
+/*-- /Circle Diagram --*/
+
+/* ----- Show Travel Details Day - circle diagram - Tabs section ------ */
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

@@ -192,6 +192,47 @@ $(document).ready(function() {
 
     // ----------------------------------------------------------------------------------
 
+    $(function() {
+
+        var tabLinkAttr;
+
+        $(".tab-link").click(function() {
+
+            // tabLinkAttr = $(this).attr("for");
+
+            // if( $(".tab-radio").attr("id") == tabLinkAttr ) {
+
+                $(".tab-link").removeClass("active");
+
+                $(this).addClass("active");
+
+            // }
+
+        });
+
+    });
+
+    // ----------------------------------------------------------------------------------
+
+    var countCircleDiagram = $(".diagram-box").length- 1;
+    var circleDiagramIndex;
+    var circleDiagramTxt;
+
+
+
+    for(circleDiagramIndex = 0; circleDiagramIndex <= countCircleDiagram; circleDiagramIndex++) {
+
+        circleDiagramTxt = $(".diagram-box:eq("+ circleDiagramIndex +") .diagram-txt").html();
+
+        $(".diagram-box:eq("+ circleDiagramIndex +") .circles-text").html(circleDiagramTxt);
+
+        console.log(circleDiagramIndex +"  "+ countCircleDiagram +"   "+ circleDiagramTxt);
+
+    }
+
+
+
+    // ----------------------------------------------------------------------------------
 
     function getPopupPosition() {
 
