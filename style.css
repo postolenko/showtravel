@@ -2580,7 +2580,8 @@ section.services-sect {
 }
 
 .search-sect.travel-preview .elipse-link {
-    padding: 4px 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .search-sect.travel-preview .list-oval-links li {
