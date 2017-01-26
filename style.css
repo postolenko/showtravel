@@ -262,6 +262,10 @@ select {
     margin: 0 auto;
 }
 
+.row-half {
+    width: 50%;
+}
+
 .offset-ziro {
     font-size: 0;
     line-height: 0;
@@ -3178,6 +3182,16 @@ section.services-sect {
     padding-right: 0;
 }
 
+.addpage-col .row-half.left {
+    padding-left: 0;
+    padding-right: 1%; 
+}
+
+.addpage-col .row-half.right {
+    padding-left: 1%;
+    padding-right: 0; 
+}
+
 .addpage-col label {
     display: block;
     padding: 4px 0;
@@ -4944,7 +4958,8 @@ input[type=file].upload-inpt {
     vertical-align: top;
     overflow: hidden;
     width: 50%;
-    height: 210px;
+    /*height: 210px;*/
+    height: 200px;
     padding: 10px;
     position: relative;
     -webkit-border-radius: 2px;
@@ -5001,7 +5016,7 @@ input[type=file].upload-inpt {
 
 .all-photo .miniature-img {
     background: rgba(226, 226, 226, 1);
-    padding: 34% 0 0 0;
+    padding: 38% 0 0 0;
     position: relative;
 }
 
@@ -6906,7 +6921,6 @@ footer {
     line-height: 22px;
     font-weight: normal;
     font-style: normal;
-    /*color: #333333;*/
     color: #a5abb8;
 }
 

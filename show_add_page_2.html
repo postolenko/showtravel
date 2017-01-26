@@ -24,12 +24,16 @@
 
 	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css">
 
+	<link rel="stylesheet" href="vendors/css/sumoselect.css">
+
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="vendors/js/jquery.sumoselect.js"></script>
 
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
@@ -287,19 +291,23 @@
 
 								<div class="form-sect clearfix">
 									
-									<div class="addpage-col row-full">
+									<div class="addpage-col row-full clearfix">
 										
 										<label>Категория <span class="grey">(Выберите одну категорию, лучше всего описывающую эту достопримечательность)</span></label>
 
-										<select>
-											
-											<option>Выберите из списка...</option>
-											<option>Значение 2</option>
-											<option>Значение 3</option>
-											<option>Значение 4</option>
-											<option>Значение 5</option>
+										<div class="row-half left">
 
-										</select>
+											<select>
+												
+												<option>Выберите из списка...</option>
+												<option>Значение 2</option>
+												<option>Значение 3</option>
+												<option>Значение 4</option>
+												<option>Значение 5</option>
+
+											</select>
+
+										</div>
 
 									</div>
 
@@ -597,7 +605,7 @@
 
 		<script>
 
-		(function($){
+			(function($){
 
 				$(window).on("load",function(){
 					
@@ -606,6 +614,8 @@
 				});
 
 			})(jQuery);
+
+			$("select").SumoSelect();
 
 		</script>
 	

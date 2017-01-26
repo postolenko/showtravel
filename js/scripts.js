@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-    //   preload
-    // $(window).on('load', function () {
-
-    //     setTimeout(function() {
-
-    //         $(".preload-bg").fadeOut(500);
-
-    //     }, 700);
-  
-
-    // });
 
     var windowHeight;
     var windowWidt;
@@ -29,7 +18,7 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
-        // $(".services-white-bg").css({"width" : ( $(".services .col-1").offset().left + $(".services .col-1").width() ) + "px"});
+        getServicesLeftColBg();
 
         // ----------------------------------------------------------------------------
 
@@ -249,15 +238,9 @@ $(document).ready(function() {
 
         $(".tab-link").click(function() {
 
-            // tabLinkAttr = $(this).attr("for");
+            $(".tab-link").removeClass("active");
 
-            // if( $(".tab-radio").attr("id") == tabLinkAttr ) {
-
-                $(".tab-link").removeClass("active");
-
-                $(this).addClass("active");
-
-            // }
+            $(this).addClass("active");
 
         });
 
@@ -276,8 +259,6 @@ $(document).ready(function() {
         circleDiagramTxt = $(".diagram-box:eq("+ circleDiagramIndex +") .diagram-txt").html();
 
         $(".diagram-box:eq("+ circleDiagramIndex +") .circles-text").html(circleDiagramTxt);
-
-        console.log(circleDiagramIndex +"  "+ countCircleDiagram +"   "+ circleDiagramTxt);
 
     }
 
