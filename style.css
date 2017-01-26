@@ -6262,6 +6262,7 @@ footer {
     max-width: 480px;
     min-width: 310px;
     height: auto;
+    /*max-height: 92vh;*/
     padding: 5px;
     position: fixed;
     top: 0;
@@ -6277,8 +6278,10 @@ footer {
 
 .popup {
     display: block;
-    max-height: 96vh;
-    padding: 10px 10px 30px 10px;
+    height: auto;
+    min-height: auto;
+    /*max-height: 96vh;*/
+    padding: 10px 7px 30px 10px;
     text-align: center;
     background-color: rgb(241, 241, 241);
     border: 1px solid #d9d9d9;
@@ -6290,9 +6293,24 @@ footer {
     z-index: 2;
 }
 
-.popup.mCustomScrollbar {
-    padding: 10px 10px !important;
+.popup-box .mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
 }
+
+.popup .scroll {
+    max-height: 96vh;
+}
+
+/*.popup-box.scroll {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: 92vh;
+}
+
+.popup-box .mCustomScrollbar {
+    padding: 10px 10px !important;
+    max-height: 96vh !important;
+}*/
 
 .back-link-box {
     display: block;
