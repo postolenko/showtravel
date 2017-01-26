@@ -6332,9 +6332,6 @@ footer {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    /*top: -21px;*/
-/*    top: 0;
-    right: 0;*/
     background: transparent;
     border: 1px solid transparent;
 }
@@ -6998,14 +6995,105 @@ footer {
 /*-- /Popup Login --*/
 
 
-.login-form.reg {
-    /*max-height: 90vh;*/
-}
-
-/*.popup-box {
-    max-height: 90vh;
-}*/
-
 .login-form.reg .inpt-box input.login-inpt{
     width: 100%;
 }
+
+
+/*-- Popup Video --*/
+
+
+.popup-video-wrapp {
+    display: none;
+    /*display: block;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 31;
+    text-align: center;
+}
+
+.video-popup-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.popup-video {
+    display: block;
+    width: 590px;
+    height: 365px;
+}
+
+.popup-video-box {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 600px;
+}
+
+.close-video-popup {
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.close-video-popup:after {
+    display: block;
+    content:"\2716";
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    font-size: 19px;
+    line-height: 28px;
+    color: #ffffff;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.close-video-popup:hover:after {
+    color: #707070;
+}
+
+.video-box {
+  /*  display: block;
+    margin: 0 auto;*/
+}
+
+.video-box iframe {
+    /*display: block;*/
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+}
+
+/*-- /Popup Video --*/
