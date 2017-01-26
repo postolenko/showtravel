@@ -4,6 +4,32 @@ $(document).ready(function() {
     var windowHeight;
     var windowWidt;
 
+    // ------------------------------------
+
+    var countCircleTooltip = $(".circle-tooltip").length - 1;
+    var indexCircleTooltip = 0;
+    var circleTooltipContentHeight;
+
+    // ----------------------------------------
+
+    var srcAttrVideo;
+
+    // ------------------------------------------
+
+    var activeLinkAttr;
+    var linkAttr;
+    var serviceLinkCount = $(".service-link").length - 1;
+    var serviceLinkIndex = 0;
+
+    // -------------------------------------------
+
+    var countCircleDiagram = $(".diagram-box").length- 1;
+    var circleDiagramIndex;
+    var circleDiagramTxt;
+
+
+    // ------------------------------------------
+
 
     getPopupPosition();
 
@@ -45,13 +71,11 @@ $(document).ready(function() {
 
     // ----------------------------------------------------------------------------------
 
-    var countCircleTooltip = $(".circle-tooltip").length - 1;
+    // var countCircleTooltip = $(".circle-tooltip").length - 1;
 
-    // console.log(countCircleTooltip);
+    // var indexCircleTooltip = 0;
 
-    var indexCircleTooltip = 0;
-
-    var circleTooltipContentHeight;
+    // var circleTooltipContentHeight;
 
     // for( indexCircleTooltip = 0; indexCircleTooltip <= countCircleTooltip; countCircleTooltip++ ) {
 
@@ -124,7 +148,7 @@ $(document).ready(function() {
 
     $(function() {
 
-        var srcAttrVideo;
+        // var srcAttrVideo;
 
         $(".video-thumb").click(function(videoLinkEvent) {
 
@@ -162,13 +186,13 @@ $(document).ready(function() {
 
     $(function() {
 
-        var activeLinkAttr;
+        // var activeLinkAttr;
 
-        var linkAttr;
+        // var linkAttr;
 
-        var serviceLinkCount = $(".service-link").length - 1;
+        // var serviceLinkCount = $(".service-link").length - 1;
 
-        var serviceLinkIndex = 0;
+        // var serviceLinkIndex = 0;
 
         for(serviceLinkIndex = 0; serviceLinkIndex <= serviceLinkCount; serviceLinkIndex++) {
 
@@ -244,8 +268,6 @@ $(document).ready(function() {
 
     $(function() {
 
-        var tabLinkAttr;
-
         $(".tab-link").click(function() {
 
             $(".tab-link").removeClass("active");
@@ -258,9 +280,9 @@ $(document).ready(function() {
 
     // ----------------------------------------------------------------------------------
 
-    var countCircleDiagram = $(".diagram-box").length- 1;
-    var circleDiagramIndex;
-    var circleDiagramTxt;
+    // var countCircleDiagram = $(".diagram-box").length- 1;
+    // var circleDiagramIndex;
+    // var circleDiagramTxt;
 
 
 
@@ -277,8 +299,8 @@ $(document).ready(function() {
 
     function getPopupPosition() {
 
-        var windowHeight = $(window).height();
-        var windowWidth = $(window).width();
+        windowHeight = $(window).height();
+        windowWidth = $(window).width();
 
         $(".popup-position").css({  "top" :  ( windowHeight - $(".popup-position").outerHeight(true) ) / 2 + "px",
                                     "left" : ( windowWidth - $(".popup-position").outerWidth(true) ) / 2 + "px" 
