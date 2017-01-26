@@ -9,3 +9,4 @@
 # http://postolenko.github.io/showtravel/show_attractions_info.html
 # http://postolenko.github.io/showtravel/show_travel_detail_days.html
 # http://postolenko.github.io/showtravel/show_profile_popup_login.html
+# http://postolenko.github.io/showtravel/show_profile_popup_registration.html
