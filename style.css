@@ -5746,7 +5746,7 @@ section.comments-section {
 .upload-file-comment-btn {
     display: block;
     background: transparent;
-    border: 1px solid transparent;
+    border: 1px solid #d9d9d9;
     background: rgba(255, 255, 255, 1);
 }
 
