@@ -6879,7 +6879,8 @@ footer {
     line-height: 22px;
     font-weight: normal;
     font-style: normal;
-    color: #333333;
+    /*color: #333333;*/
+    color: #a5abb8;
 }
 
 
