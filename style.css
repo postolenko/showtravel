@@ -4868,7 +4868,6 @@ input[type=file].upload-inpt {
     display: inline-block;
     vertical-align: top;
     width: 60%;
-    height: 400px;
     overflow: hidden;
     padding: 10px 10px 10px 0;
 
@@ -4902,19 +4901,12 @@ input[type=file].upload-inpt {
 .big-thumbnail-img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 380px;
+    cursor: pointer;
+    margin: 0 0 20px 0;
     overflow: hidden;
     position: relative;
     background: rgba(226, 226, 226, 1);
-}
-
-.big-thumbnail img {
-    display: block;
-    border: none;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
 
     -webkit-transition-property: transform;
     -webkit-transition-duration: .7s;
@@ -4937,7 +4929,7 @@ input[type=file].upload-inpt {
     transition-timing-function: ease;
 }
 
-.big-thumbnail-img:hover img {
+.big-thumbnail-img:hover {
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
     -ms-transform: scale(1.02);
@@ -4945,11 +4937,19 @@ input[type=file].upload-inpt {
     transform: scale(1.02);
 }
 
+.big-thumbnail img {
+    display: block;
+    border: none;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
 .miniature-thumbnails {
     display: inline-block;
     vertical-align: top;
     width: 40%;
-    height: 390px;
     overflow: hidden;
 }
 
@@ -4958,7 +4958,6 @@ input[type=file].upload-inpt {
     vertical-align: top;
     overflow: hidden;
     width: 50%;
-    /*height: 210px;*/
     height: 200px;
     padding: 10px;
     position: relative;
@@ -4973,6 +4972,7 @@ input[type=file].upload-inpt {
     display: block;
     width: 100%;
     height: 100%;
+    cursor: pointer;
     overflow: hidden;
     background: rgba(226, 226, 226, 1);
 
@@ -5739,6 +5739,10 @@ section.comments-section {
     background: rgba(255, 255, 255, 1);
 }
 
+.file-upl-box {
+    position: relative;
+}
+
 .upload-file-comment-btn {
     display: block;
     background: transparent;
@@ -5746,11 +5750,23 @@ section.comments-section {
     background: rgba(255, 255, 255, 1);
 }
 
+.upload-file-comment-inpt {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 12px;
+    left: 48px;
+    z-index: -1;
+}
+
 .upload-comment-icon {
     display: block;
     width: 66px;
     height: 22px;
-    margin: 0 auto;
+    margin: -5px auto 0 auto;
     background-image: url(img/upload_comment_icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -7099,8 +7115,7 @@ footer {
 }
 
 .video-box {
-  /*  display: block;
-    margin: 0 auto;*/
+    padding: 5px 0 10px 0;
 }
 
 .video-box iframe {

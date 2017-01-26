@@ -222,6 +222,16 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".upload-file-comment-btn").click(function() {
+
+            $(".upload-file-comment-inpt").click();
+
+        });
+
+    });
+
     // ----------------------------------------------------------------------------------
 
     $(function() {
